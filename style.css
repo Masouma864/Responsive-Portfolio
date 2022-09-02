@@ -32,16 +32,16 @@ header .section-1 {
   left: 0;
   right: 0;
   width: 100%;
-  padding: 0px;
+  padding: 0;
   background-color: white;
 }
+
 .menu1 {
   display: none;
 }
 
 .menu1 li {
   display: inline-block;
-
   color: blue;
   margin: 10px;
   direction: rtl;
@@ -294,7 +294,6 @@ button:hover {
 .btn button,
 .btn1 button {
   align-items: center;
-
   height: 34px;
   font-family: var(--header-font);
   font-style: normal;
@@ -305,7 +304,6 @@ button:hover {
   letter-spacing: 0.03em;
   background-color: #fff;
   color: #396df2;
-  margin-top: 2px;
   display: flex;
   flex-direction: row;
   padding: 12px;
@@ -313,10 +311,12 @@ button:hover {
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
-.btn button .button {
-  width: 30%;
+
+.btn button {
+  width: 100%;
 }
-.but button  {
+
+.but button {
   border-radius: 8px;
   align-items: center;
   list-style: none;
@@ -360,7 +360,6 @@ button:hover {
 
 .stories {
   width: 80%;
-
   font-family: var(--header-font);
   font-style: normal;
   font-weight: 700;
@@ -376,7 +375,6 @@ button:hover {
   grid-template-columns: auto;
   grid-template-rows: auto;
   margin-top: 320px;
-
   padding-bottom: 80px;
   position: relative;
   background: #fff;
@@ -386,7 +384,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 114px 24px 0px 24px;
+  margin: 114px 24px 0 24px;
   gap: 12px;
   width: 80%;
 }
@@ -484,9 +482,8 @@ button:hover {
 .skills .subjects {
   display: flex;
   flex-direction: column;
-  padding: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 0;
   gap: 12px;
-
   width: 100%;
 }
 
@@ -500,7 +497,6 @@ button:hover {
 
 .subjects .javascri {
   width: 303px;
-
   background: #f7f7f9;
   border-radius: 8px;
   display: flex;
@@ -540,7 +536,6 @@ button:hover {
 
 .framework {
   width: 327px;
-
   display: flex;
   gap: 30px;
   align-items: center;
@@ -602,9 +597,7 @@ button:hover {
 .contact-me {
   display: flex;
   flex-direction: column;
-
   border-top-left-radius: 65px;
-
   background: #6070ff;
 }
 
@@ -623,6 +616,7 @@ button:hover {
 .contact-cont form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -648,12 +642,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-
   color: #ebebff;
-}
-form {
-  display: flex;
-  align-items: center;
 }
 
 form .input-1 {
@@ -694,7 +683,7 @@ form .btn-press {
   margin: 22px 11px 0 0;
 }
 
-.btn-press #but {
+.btn-press button {
   width: 108px;
   height: 24px;
   font-family: var(--header-font);
@@ -720,31 +709,39 @@ footer div {
   bottom: 8px;
   left: 30%;
 }
+
 @media screen and (min-width: 768px) {
   .main-container .container-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .container-About {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .skills .subjects {
     flex-direction: row;
   }
+
   .javascri,
   .htm,
   .cs {
     flex-direction: column;
   }
+
   .menu1 {
     display: flex;
   }
+
   .section-1 .menu-icon {
     display: none;
   }
+
   .line-1 {
     bottom: 25.3%;
   }
+
   .line-2 {
     bottom: 13%;
   }
