@@ -1,29 +1,24 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Project Name:
 
-# Project Name:finish mobile version
-
+Desktop Version of Portfolio
 
 Description:
-  portfolio website, I created the mobile website section where I listed my portfolio projects.
+portfolio website, I created the desktop vesion of Portfolio Project.
 
 objectives:
 Understand how to parse a Figma design to create a UI.
 Use Flexbox to place elements in the page.
 Use CSS Grid to place elements in the page.
-Build a personal portfolio site.
+Build a personal portfolio site for Desktop
 
 ## Built With
 
 HTML , CSS
 
-
-
 [
 👤 Author:
-    Masouma 
+Masouma
 
 - GitHub: [@masouma2020](https://github.com/githubhandle)
 
 - LinkedIn: [Masouma M](https://linkedin.com/in/linkedinhandle)
-
-
