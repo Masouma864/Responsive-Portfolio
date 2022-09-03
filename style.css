@@ -1,11 +1,15 @@
 * {
+  box-sizing: border-box;
+}
+html,
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 50s linear;
 }
 
 .main-container {
-  position: relative;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
   width: 100%;
@@ -13,12 +17,11 @@
 }
 
 .container-1 {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
-  height: 660px;
-  margin-bottom: 10px;
-  justify-content: space-between;
+  height: 550px;
+  margin-bottom: 0px;
 }
 
 :root {
@@ -35,14 +38,27 @@ header .section-1 {
   padding: 0;
   background-color: white;
 }
+.menu-icon {
+  display: flex;
+  flex-direction: ltr;
+  flex-direction: row;
+  list-style: none;
+}
+.menu-icon li img {
+  width: 40px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
 
 .menu1 {
   display: none;
+  padding-right: 50px;
 }
 
 .menu1 li {
   display: inline-block;
-  color: blue;
+  color: black;
   margin: 10px;
   direction: rtl;
 }
@@ -61,40 +77,26 @@ header .section-1 {
   text-decoration: none;
 }
 
-.section-1 .menu-icon {
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: 700;
-  width: 0.9%;
-  height: 40px;
-  padding: 8px;
-  margin: 8px 24px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #6070ff;
-}
-
 .cont-1-sec-2 {
   background: url(portfolio-images/header-shapes\ mobile@2x.jpg);
   width: 100%;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 10%;
+  margin-bottom: 60px;
   gap: 12px;
   position: absolute;
-  top: 44px;
-  left: 0;
-  right: 0;
 }
 
 section .section-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 100%;
 }
 
 .tonic-cont h2 {
@@ -108,33 +110,23 @@ section .section-2 {
   color: #172b4d;
 }
 
-section .section-2 h2 {
+.section-2 h2 {
   width: 100%;
   height: 150px;
   font-family: var(--header-font);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900 !important;
   font-size: 40px;
-  line-height: 52px;
+  line-height: 45px;
   display: flex;
   align-items: center;
   color: #172b4d;
+  margin-top: 50px;
   margin-bottom: 12px;
 }
 
-.sec-content p {
-  width: 70%;
-  height: 76px;
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #344563;
-}
-
 section .section-2 p {
-  width: 80%;
+  width: 100%;
   height: 146px;
   font-family: var(--header-font);
   font-style: normal;
@@ -153,36 +145,45 @@ section .section-2 .connect-cont .connect {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   color: #7f8cff;
-  margin-bottom: 14px;
+
+  margin-bottom: 4px;
 }
 
 section .section-2 .social-container {
   display: flex;
   justify-content: space-between;
-  width: 170.17px;
+  width: 178px;
+  padding-left: 0%;
   height: 20px;
 }
 
 section .section-2 .social-container .icon {
   font-size: 20px;
-  color: #505f79;
+  color: white;
   list-style: none;
+  padding: 120px auto;
 }
 
 /* Work Section */
 
 .container-2 {
   align-items: center;
-  padding: 15px;
-  margin: 2%;
-  width: 85%;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 9%;
+  margin-top: 60px;
+  width: 80%;
   height: 28%;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   background: #fff;
   border-radius: 16px;
+}
+.img-container img {
+  width: 89%;
+  height: 85%;
 }
 
 .sec-content .tonic-cont {
@@ -197,8 +198,8 @@ section .section-2 .social-container .icon {
   display: flex;
   align-items: center;
   padding: 0;
-  gap: 12px;
-  width: 70%;
+
+  width: 78%;
   height: 32px;
   margin-bottom: 10px;
 }
@@ -292,7 +293,9 @@ button:hover {
 }
 
 .btn button,
-.btn1 button {
+.btn1 button,
+.btn3 button,
+.btn-press button {
   align-items: center;
   height: 34px;
   font-family: var(--header-font);
@@ -310,6 +313,9 @@ button:hover {
   margin-top: 14px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+}
+.btn-press button {
+  width: 100%;
 }
 
 .btn button {
@@ -338,24 +344,24 @@ button:hover {
 /* Addional styling Work section on Mult-Post stories */
 .mult {
   align-items: center;
-  padding: 15px;
-  margin: 2%;
-  width: 85%;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 9%;
+  margin-top: 60px;
+  width: 80%;
   height: 28%;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   background: #fff;
   border-radius: 16px;
 }
 
 .sec-content .post {
-  width: 80%;
-  height: 124px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 12px;
+  width: 100%;
 }
 
 .stories {
@@ -372,12 +378,13 @@ button:hover {
 
 .container-About {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  margin-top: 320px;
-  padding-bottom: 80px;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding-bottom: 200px;
+  padding-left: 50px;
   position: relative;
   background: #fff;
+  margin-top: 600px;
 }
 
 .TOP {
@@ -413,26 +420,7 @@ button:hover {
   color: #344563;
 }
 
-.TOP .society {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  gap: 16px;
-  width: 90%;
-}
-
-.society .conn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 8px;
-  width: 118px;
-  height: 24px;
-}
-
-.society .conn h2 {
+.conn h2 {
   width: 118px;
   height: 24px;
   font-family: var(--header-font);
@@ -441,17 +429,35 @@ button:hover {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin-left: 30px;
+}
+.social{
+  padding-right: 50%;
+}
+.social .btn{
+  margin-left: 30px;
 }
 
-.society .social-conta {
+
+.media2,
+.media1 {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 22.29px;
-  padding: 0;
+  flex-direction: row;
+  text-align: center;
   list-style: none;
-  width: 200px;
-  height: 40px;
+}
+.media2 img,
+.media1 img {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.media1{
+  padding-left: 5px;
 }
 
 .skills {
@@ -535,11 +541,11 @@ button:hover {
 }
 
 .framework {
-  width: 327px;
+  width: 100%;
   display: flex;
   gap: 30px;
   align-items: center;
-  padding: 24px 24px 24px 12px;
+  padding: 24px 0px 24px 12px;
   list-style: none;
 }
 
@@ -555,29 +561,31 @@ button:hover {
   align-items: center;
 }
 
-.line-1 {
-  width: 100%;
-  height: 1px;
-  background: #dfe1e6;
+.vectorline {
   position: absolute;
-  bottom: 2.3%;
+  display: flex;
+  float: left;
+  width: 100%;
+  padding: 132px 0px 70px 0px;
 }
-
-.line-2 {
-  width: 100%;
-  height: 1px;
-  background: #dfe1e6;
+.vectorline2 {
   position: absolute;
-  bottom: -12.4%;
+  display: flex;
+  float: left;
+  width: 100%;
+  padding: 157px 0px 70px 0px;
+}
+.skills {
+  margin-bottom: 40px;
 }
 
 .skils {
-  width: 327px;
+  width: 100%;
   height: 72px;
   display: flex;
   gap: 30px;
   align-items: center;
-  padding: 24px 24px 24px 12px;
+  padding: 24px 0px 24px 12px;
   margin-bottom: 113.85;
   list-style: none;
 }
@@ -588,7 +596,7 @@ button:hover {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  width: 237px;
+  width: 80%;
   height: 24px;
   display: flex;
   align-items: center;
@@ -603,7 +611,6 @@ button:hover {
 
 .contact-cont {
   border-top-left-radius: 65px;
-  height: 779px;
   width: 100%;
   padding: 13px 14px 45px 24px;
   background: url(./portfolio-images/header-shapes\mobile.png);
@@ -616,7 +623,6 @@ button:hover {
 .contact-cont form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -640,13 +646,23 @@ button:hover {
   font-size: 20px;
   line-height: 28px;
   align-items: center;
+  display: flex;
+  padding-right: 20%;
+  padding-left: 20%;
   justify-content: center;
   text-align: center;
   color: #ebebff;
 }
 
+.contact-cont form {
+  display: flex;
+  align-items: center;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
 form .input-1 {
-  width: 327px;
+  width: 367px;
   height: 48px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -655,7 +671,7 @@ form .input-1 {
 }
 
 form .input-2 {
-  width: 327px;
+  width: 367px;
   height: 48px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -667,57 +683,24 @@ form textarea {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 327px;
+  width: 367px;
   height: 170px;
 }
 
-form .btn-press {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px;
-  width: 140px;
-  height: 48px;
-  background: #fff;
-  border-radius: 8px;
-  margin: 22px 11px 0 0;
-}
-
-.btn-press button {
-  width: 108px;
-  height: 24px;
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  background-color: #fff;
-  border: none;
-}
-
-footer div {
-  width: 135px;
-  height: 5px;
-  background: #0d151e;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 8px;
-  left: 30%;
-}
-
 @media screen and (min-width: 768px) {
-  .main-container .container-2 {
+  .main-container .container-2,
+  .mult {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .container-1 {
+    margin-bottom: 190px;
+  }
 
   .container-About {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 700px;
   }
 
   .skills .subjects {
@@ -744,5 +727,30 @@ footer div {
 
   .line-2 {
     bottom: 13%;
+  }
+  section .section-2 .connect-cont .connect {
+    margin-top: 0;
+  }
+  .education ul {
+    flex: 0.5;
+  }
+  .education {
+    width: 60%;
+  }
+  .education h5 {
+    flex: 0.2;
+  }
+  .contact-cont .graph {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .conn h2{
+    margin-left: 10px;
+  }
+  .social .btn{
+    margin-left: 10px;
+  }
+  .media2{
+   padding-left: 10px;
   }
 }
