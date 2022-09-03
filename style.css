@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0;
@@ -21,7 +22,7 @@ body {
   grid-template-columns: 1fr;
   width: 100%;
   height: 550px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 :root {
@@ -38,16 +39,15 @@ header .section-1 {
   padding: 0;
   background-color: white;
 }
+
 .menu-icon {
-  display: flex;
-  flex-direction: ltr;
-  flex-direction: row;
-  list-style: none;
-}
-.menu-icon li img {
-  width: 40px;
+  width: 50px;
   height: 50px;
-  margin-right: 20px;
+}
+
+.menu-icon img {
+  width: 35px;
+  height: 35px;
   margin-top: 20px;
 }
 
@@ -104,7 +104,7 @@ section .section-2 {
   height: 36px;
   font-family: var(--header-font);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
@@ -147,7 +147,6 @@ section .section-2 .connect-cont .connect {
   line-height: 24px;
   margin-top: 1.5rem;
   color: #7f8cff;
-
   margin-bottom: 4px;
 }
 
@@ -181,6 +180,7 @@ section .section-2 .social-container .icon {
   background: #fff;
   border-radius: 16px;
 }
+
 .img-container img {
   width: 89%;
   height: 85%;
@@ -198,7 +198,6 @@ section .section-2 .social-container .icon {
   display: flex;
   align-items: center;
   padding: 0;
-
   width: 78%;
   height: 32px;
   margin-bottom: 10px;
@@ -314,8 +313,9 @@ button:hover {
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
+
 .btn-press button {
-  width: 100%;
+  width: 180%;
 }
 
 .btn button {
@@ -431,13 +431,14 @@ button:hover {
   color: #7f8cff;
   margin-left: 30px;
 }
-.social{
+
+.social {
   padding-right: 50%;
 }
-.social .btn{
+
+.social .btn {
   margin-left: 30px;
 }
-
 
 .media2,
 .media1 {
@@ -447,6 +448,7 @@ button:hover {
   text-align: center;
   list-style: none;
 }
+
 .media2 img,
 .media1 img {
   width: 25px;
@@ -456,7 +458,8 @@ button:hover {
   align-items: center;
   margin-right: 20px;
 }
-.media1{
+
+.media1 {
   padding-left: 5px;
 }
 
@@ -465,7 +468,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   padding: 104px 12px;
-  margin: 0 24px 0 24px;
+  margin: 40px;
   gap: 3px;
   position: relative;
   width: 397px;
@@ -545,7 +548,7 @@ button:hover {
   display: flex;
   gap: 30px;
   align-items: center;
-  padding: 24px 0px 24px 12px;
+  padding: 24px 0 24px 12px;
   list-style: none;
 }
 
@@ -566,17 +569,15 @@ button:hover {
   display: flex;
   float: left;
   width: 100%;
-  padding: 132px 0px 70px 0px;
+  margin-top: 135%;
 }
+
 .vectorline2 {
   position: absolute;
   display: flex;
   float: left;
   width: 100%;
-  padding: 157px 0px 70px 0px;
-}
-.skills {
-  margin-bottom: 40px;
+  margin-top: 110%;
 }
 
 .skils {
@@ -585,7 +586,7 @@ button:hover {
   display: flex;
   gap: 30px;
   align-items: center;
-  padding: 24px 0px 24px 12px;
+  padding: 24px 0 24px 12px;
   margin-bottom: 113.85;
   list-style: none;
 }
@@ -615,12 +616,6 @@ button:hover {
   padding: 13px 14px 45px 24px;
   background: url(./portfolio-images/header-shapes\mobile.png);
   background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-cont form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -656,9 +651,10 @@ button:hover {
 
 .contact-cont form {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-right: 20%;
-  padding-left: 20%;
+  margin-right: 50%;
+  margin-left: 50%;
 }
 
 form .input-1 {
@@ -693,6 +689,7 @@ form textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .container-1 {
     margin-bottom: 190px;
   }
@@ -728,29 +725,45 @@ form textarea {
   .line-2 {
     bottom: 13%;
   }
+
   section .section-2 .connect-cont .connect {
     margin-top: 0;
   }
+
   .education ul {
     flex: 0.5;
   }
+
   .education {
     width: 60%;
   }
+
   .education h5 {
     flex: 0.2;
   }
+
   .contact-cont .graph {
     padding-left: 30%;
     padding-right: 30%;
   }
-  .conn h2{
+
+  .conn h2 {
     margin-left: 10px;
   }
-  .social .btn{
+
+  .social .btn {
     margin-left: 10px;
   }
-  .media2{
-   padding-left: 10px;
+
+  .media2 {
+    padding-left: 10px;
+  }
+
+  .vectorline {
+    margin-top: 83%;
+  }
+
+  .vectorline2 {
+    margin-top: 110%;
   }
 }
