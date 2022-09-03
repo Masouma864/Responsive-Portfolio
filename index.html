@@ -11,14 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <!--FontAwersome link-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    
     <!--Stylesheet-->
     <link rel="stylesheet" href="style.css" />
     <title>Mobile Portfolio</title>
@@ -34,13 +27,13 @@
             <nav>
               <div class="menu1">
                 <ul>
-                  <li>Contact me</li>
-                  <li>About me</li>
                   <li>Portfolio</li>
+                  <li>About</li>
+                  <li>Contact</li>
                 </ul>
               </div>
               <div class="menu-icon">
-                <i class="fas fa-bars"></i>
+                <a href=""> <img src="portfolio-images/image3.png" alt="Facebook" /></a>
               </div>
             </nav>
           </div>
@@ -48,7 +41,7 @@
         <section class="cont-1-sec-2">
           <div class="section-2">
             <h2>
-              I’m Alexandra<br />
+              I’m Mariane<br />
               Glad to see you!
             </h2>
             <p class="content">
@@ -60,32 +53,11 @@
             <div class="connect-cont">
               <h2 class="connect">LET’S CONNECT</h2>
             </div>
-            <ul class="social-container">
-              <li class="icon icon-tw">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="icon icon-in">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li class="icon icon-me">
-                <a href="#">
-                  <i class="fab fa-medium-m"></i>
-                </a>
-              </li>
-              <li class="icon icon-ca">
-                <a href="#">
-                  <i class="fab fa-github-square"></i>
-                </a>
-              </li>
-              <li class="icon icon-ch">
-                <a href="#">
-                  <i class="far fa-hand-peace"></i>
-                </a>
-              </li>
+            <ul class="media1">
+              <li><a href=""> <img src="portfolio-images/Linkedin.png" alt=" Instagram" /></a></li>
+              <li><a href=""> <img src="portfolio-images/images2.png" alt=" Linkedin" /></a></li>
+             <li> <a href=""> <img src="portfolio-images/twiter2.png" alt=" Twitter" /></a></li>
+              <li><a href=""> <img src="portfolio-images/telegram.png" alt="Facebook" /></a></li>
             </ul>
           </div>
         </section>
@@ -150,7 +122,7 @@
               <li class="css course">css</li>
               <li class="javascript course">javaScript</li>
             </ul>
-            <div class="btn">
+            <div class="btn3">
               <button type="button">See Project</button>
             </div>
           </div>
@@ -229,42 +201,22 @@
             you like what you see and have a project you need coded, don’t
             hestiate to contact me.
           </p>
-          <div class="society">
+       <div class="social">
             <div class="conn">
               <h2>LET’S CONNECT</h2>
             </div>
-            <ul class="social-conta">
-              <li class="icon icon-tw">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="icon icon-in">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li class="icon icon-me">
-                <a href="#">
-                  <i class="fab fa-medium-m"></i>
-                </a>
-              </li>
-              <li class="icon icon-ca">
-                <a href="#">
-                  <i class="fab fa-github-square"></i>
-                </a>
-              </li>
-              <li class="icon icon-ch">
-                <a href="#">
-                  <i class="far fa-hand-peace"></i>
-                </a>
-              </li>
+            <ul class="media2">
+              <li><a href=""> <img src="portfolio-images/Linkedin.png" alt=" Instagram" /></a></li>
+              <li><a href=""> <img src="portfolio-images/images2.png" alt=" Linkedin" /></a></li>
+             <li> <a href=""> <img src="portfolio-images/twiter2.png" alt=" Twitter" /></a></li>
+              <li><a href=""> <img src="portfolio-images/telegram.png" alt="Facebook" /></a></li>
             </ul>
             <div class="btn">
               <button type="button">Get my resume</button>
             </div>
           </div>
-        </div>
+          </div>
+        
         <div class="skills">
           <h2 id="langu">Languages</h2>
           <ul class="subjects">
@@ -293,14 +245,19 @@
           <ul class="framework">
             <li class="frame">Frameworks</li>
             <li class="great">></li>
+            
           </ul>
-          <div class="line-1"></div>
+          <img src="portfolio-images/Vectorline.png" alt="Vector" class="vectorline" />
+          
           <ul class="skils">
             <li class="skii">Skills</li>
             <li class="great">></li>
+            
           </ul>
-          <div class="line-2"></div>
+          <img src="portfolio-images/Vectorline.png" alt="Vector" class="vectorline2" />
+
         </div>
+      
       </section>
       <section class="contact-me">
         <div class="contact-cont">
@@ -310,13 +267,35 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form class="contantform" method="post" action="https://formspree.io/f/masouma_form_id">
-            <input placeholder="Your Name" class="input-1" type="text" required maxlength="30" />
-            <input placeholder="mail@example.com" class="input-2" type="email" required />
-            <textarea placeholder="Write Your Message Here" required maxlength="500"id="sheet"
-            name="form" cols="30" rows="10"></textarea>
-            <div class="button">
-              <button  type="submit">Get It Touch</button>
+          <form
+            class="contantform"
+            method="post"
+            action="https://formspree.io/f/masouma_form_id"
+          >
+            <input
+              placeholder="Your Name"
+              class="input-1"
+              type="text"
+              required
+              maxlength="30"
+            />
+            <input
+              placeholder="mail@example.com"
+              class="input-2"
+              type="email"
+              required
+            />
+            <textarea
+              placeholder="Write Your Message Here"
+              required
+              maxlength="500"
+              id="sheet"
+              name="form"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="btn-press">
+              <button type="submit">Get It Touch</button>
             </div>
           </form>
           <footer>
