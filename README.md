@@ -1,20 +1,25 @@
 # Project Name:
 
-Desktop Version of Portfolio
+# My Mobile Menu (JavaScript Version) Project
 
-Description:
-portfolio website, I created the desktop vesion of Portfolio Project.
-
-objectives:
-Understand how to parse a Figma design to create a UI.
-Use Flexbox to place elements in the page.
-Use CSS Grid to place elements in the page.
-Build a personal portfolio site for Desktop
+> **Portfolio - Mobile Menu Project!**
 
 ## Built With
 
-HTML , CSS
+- Languages Used: Html, CSS
+- Code Editor: Visual Studio Code
+- Concepts Used: Flexbox, Grid system
+- Tools Used: Linters
+- VCS: Git
+- Package Manager: Node, NPM
 
+## Project Description
+
+- To use basic JavaScript syntax.
+
+- To manipulate DOM elements.
+
+- To use JavaScript events.
 [
 👤 Author:
 Masouma
