@@ -22,7 +22,7 @@
 - To use JavaScript events.
 [
 👤 Author:
-Masouma
+Masouma (Hasina) Modarresi
 
 - GitHub: [@masouma2020](https://github.com/githubhandle)
 
