@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,13 +28,12 @@ header {
 /* text logo */
 
 .logo {
-
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   line-height: 20px;
   font-weight: 700;
   font-size: 18px;
-  color:#6070ff ;
+  color: #6070ff;
 }
 
 .logo-container {
@@ -85,7 +82,7 @@ h2 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .media_icons {
@@ -95,8 +92,7 @@ h2 {
 }
 
 .connect {
- 
-  background-color:#6070ff ;
+  background-color: #6070ff;
 }
 
 .media-icons:hover,
@@ -149,7 +145,7 @@ h2 {
 .title {
   color: #172b4d;
   font-size: 32px;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 44px;
 }
@@ -159,7 +155,7 @@ h2 {
 }
 
 .multi-post {
-  color:#172b4d;
+  color: #172b4d;
   font-size: 26px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -286,7 +282,7 @@ h2 {
   height: 48px;
   border-radius: 8px;
   margin: 22px 0 45px 24px;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: #6070ff;
   border: none;
@@ -376,7 +372,7 @@ h2 {
   align-items: center;
   border-radius: 8px;
   background-color: #fff;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -540,7 +536,7 @@ h2 {
   margin-bottom: 42px;
   font-size: 32px;
   font-weight: 600;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 44px;
   color: white;
 }
@@ -585,7 +581,7 @@ h2 {
   }
 
   .logo {
-    color:#6070ff;
+    color: #6070ff;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     line-height: 20px;
@@ -770,7 +766,7 @@ h2 {
   .title-desktop {
     color: #172b4d;
     font-size: 32px;
-    font-family: #172b4d;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 44px;
   }
