@@ -1,8 +1,8 @@
 # Project Name:
 
-# My Mobile Menu (JavaScript Version) Project
+# Portfolio popup window(using javascript)  set to  Project
 
-> **Portfolio - Mobile Menu Project!**
+>
 
 ## Built With
 
@@ -24,6 +24,6 @@
 👤 Author:
 Masouma (Hasina) Modarresi
 
-- GitHub: [@masouma2020](https://github.com/githubhandle)
+- GitHub: [@masouma2020]
 
-- LinkedIn: [Masouma M](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [Masouma M]
