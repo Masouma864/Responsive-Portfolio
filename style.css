@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +11,7 @@ html {
 }
 
 body {
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
 
@@ -66,11 +65,11 @@ h2 {
 }
 
 .hero-paragraph {
-  color:  #344563;
+  color: #344563;
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .media_icons {
@@ -148,7 +147,7 @@ h2 {
 .multi-post {
   color: #172b4d;
   font-size: 26px;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 24px;
 }
@@ -168,7 +167,7 @@ h2 {
 }
 
 .text_paragraph {
-  color:  #344563;
+  color: #344563;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -281,7 +280,7 @@ h2 {
   height: 48px;
   border-radius: 8px;
   margin: 22px 0 45px 24px;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: #6070ff;
   border: none;
