@@ -244,6 +244,7 @@ function handleSubmit(e) {
     form.reset();
   } else {
     message.innerText = 'Email in lowercase is required';
+    message.style.display="block";
   }
 }
 form.addEventListener('submit', (e) => {
