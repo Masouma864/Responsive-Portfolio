@@ -443,20 +443,15 @@ h2 {
 
 /* This is the style of our error messages */
 
-
 .error-mesg {
   width: 100%;
   padding: 0;
-
   font-size: 80%;
   color: white;
   background-color: #900;
   border-radius: 0 0 5px 5px;
-
   box-sizing: border-box;
 }
-
-
 
 .contact-me {
   color: #fff;
