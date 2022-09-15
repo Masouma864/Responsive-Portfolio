@@ -445,14 +445,15 @@ h2 {
 
 
 .error-mesg {
-  width: 100%;
-  padding: 0;
-
-  font-size: 80%;
+  display: none;
+  width: 90%;
+  padding: 8px;
+  font-size: 16px;
   color: white;
-  background-color: #900;
-  border-radius: 0 0 5px 5px;
-
+  background-color: rgb(211, 6, 6);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 20px;
   box-sizing: border-box;
 }
 
