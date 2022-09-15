@@ -444,14 +444,14 @@ h2 {
 /* This is the style of our error messages */
 
 .error-mesg {
-<<<<<<< HEAD
+  <<<<<<< HEAD
   width: 100%;
   padding: 0;
   font-size: 80%;
   color: white;
   background-color: #900;
   border-radius: 0 0 5px 5px;
-=======
+  =======
   display: none;
   width: 90%;
   padding: 8px;
@@ -461,8 +461,8 @@ h2 {
   border-radius: 5px;
   margin-bottom: 10px;
   margin-left: 20px;
->>>>>>> b85e11b54692349b8edf977bcc0e8620354a90b7
-  box-sizing: border-box;
+  >>>>>>> b85e11b54692349b8edf977bcc0e8620354a90b7
+  box-sizing: border-box;b85e11b54692349b8edf977bcc0e8620354a90b7box-sizing
 }
 
 .contact-me {
