@@ -1,8 +1,12 @@
+//modal 
 const overlay = document.querySelector('.mobileOverlay');
 function mytoggleMenu() {
   overlay.classList.toggle('hide');
 }
 mytoggleMenu();
+
+//popup window
+// create array
 const projects = [
   {
     id: 1,
@@ -212,3 +216,47 @@ window.onclick = (event) => {
   }
 };
 
+//form validation
+
+// client-side-validation and local storage data
+const form = document.getElementById('form');
+const message = document.querySelector('.error-mesg');
+const nameFull = document.getElementById('fullname');
+const email = document.getElementById('email');
+const textMessage = document.getElementById('message');
+
+// save data in local storage
+function saveData() {
+  const obj = {
+    name: nameFull.value,
+    email: email.value,
+    message: textMessage.value,
+  };
+  localStorage.setItem('data', JSON.stringify(obj));
+}
+form.addEventListener('submit', saveData);
+
+// handle Submit
+function handleSubmit(e) {
+  e.preventDefault();
+  if (/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/g.test(email.value)) {
+    form.submit();
+    form.reset();
+  } else {
+    message.innerText = 'Email in lowercase is required';
+    message.style.display="block";
+  }
+}
+form.addEventListener('submit', (e) => {
+  handleSubmit(e);
+});
+
+// getting data back on window load
+window.addEventListener('load', () => {
+  const dataB = JSON.parse(localStorage.getItem('data'));
+  if (dataB) {
+    nameFull.value = dataB.name;
+    email.value = dataB.email;
+    textMessage.value = dataB.message;
+  }
+});
