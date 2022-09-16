@@ -277,7 +277,7 @@ form.addEventListener('submit', (e) => {
     };
     error.classList.remove('msg');
     localStorage.setItem('user', JSON.stringify(storage));
-    form.submit();
+    
   }
 });
 
