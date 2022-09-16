@@ -1,7 +1,6 @@
-# Project Name:
-
-# Portfolio popup window(using javascript)  set to  Project
-
+# Project Name: preserve data in the browser
+learning object:
+use local storage to save user input
 >
 
 ## Built With
@@ -12,6 +11,9 @@
 - Tools Used: Linters
 - VCS: Git
 - Package Manager: Node, NPM
+
+Description:
+For this final milestone of your portfolio website, you will save the form data in the local storage of the browser. That way when the user reloads the page the data they filled out in the form will be preserved.
 
 ## Project Description
 
