@@ -24,6 +24,6 @@
 👤 Author:
 Masouma (Hasina) Modarresi
 
-- GitHub: [@masouma2020]
+- GitHub: [@Masouma864]
 
-- LinkedIn: [Masouma M]
+- LinkedIn: [masouma-m]
